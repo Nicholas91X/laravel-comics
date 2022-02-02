@@ -13,6 +13,17 @@
 
     <main>
         @yield('pageContent')
+        <div class="container">
+            <div class="current-series">
+                Current Series
+            </div>
+            @foreach ($comics as $comic)
+                <div class="card">
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <h5>{{$comic['series']}}</h5>
+                </div>
+            @endforeach
+        </div>
     </main>
 
     @include('partials.footer')

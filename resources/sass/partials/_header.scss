@@ -1,0 +1,50 @@
+.header-top {
+    background-color: rgba(2,130,249,255);
+    color: white;
+}
+
+.container-small {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    div {
+        margin: 0 10px;
+    }
+}
+
+.header-bottom {
+    background-color: white;
+    .container {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 900;
+        .img {
+            width: 10%;
+        }
+        .img img {
+            width: 50%;
+        }
+        nav {
+            width: 90%;
+        }
+        nav ul {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                text-transform: uppercase;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url(../../../public/img/jumbotron.jpg);
+    background-size: cover;
+}
